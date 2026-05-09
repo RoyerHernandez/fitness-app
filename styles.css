@@ -1282,7 +1282,9 @@ button { font-family: inherit; cursor: default; }
 
 @media (max-width: 640px) {
   .topbar { padding: 0 12px; }
-  .persp-toggle { display: none; }
+  .persp-toggle { height: 32px; }
+  .persp-toggle button { padding: 0 8px; font-size: 11px; gap: 4px; }
+  .persp-toggle button span { width: 5px !important; height: 5px !important; }
   .icon-btn { width: 32px; height: 32px; }
   .topbar .avatar { width: 32px; height: 32px; font-size: 11px; }
   .col-3, .col-4 { grid-column: span 12; }
