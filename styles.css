@@ -1271,6 +1271,7 @@ button { font-family: inherit; cursor: default; }
   .mobile-toggle { display: inline-flex; }
   .topbar { padding: 0 16px; gap: 8px; }
   .topbar .search { display: none; }
+  .topbar .spacer { flex: 0 !important; }
   .persp-toggle button { padding: 0 10px; font-size: 12px; }
   .main { padding: 18px 16px 60px; gap: 12px; }
   .col-3, .col-4 { grid-column: span 6; }
@@ -1281,12 +1282,12 @@ button { font-family: inherit; cursor: default; }
 }
 
 @media (max-width: 640px) {
-  .topbar { padding: 0 12px; }
-  .persp-toggle { height: 32px; }
-  .persp-toggle button { padding: 0 8px; font-size: 11px; gap: 4px; }
+  .topbar { padding: 0 10px; gap: 6px; }
+  .persp-toggle { height: 30px; flex-shrink: 0; }
+  .persp-toggle button { padding: 0 7px; font-size: 11px; gap: 3px; }
   .persp-toggle button span { width: 5px !important; height: 5px !important; }
-  .icon-btn { width: 32px; height: 32px; }
-  .topbar .avatar { width: 32px; height: 32px; font-size: 11px; }
+  .icon-btn { width: 30px; height: 30px; }
+  .topbar .avatar { width: 30px; height: 30px; font-size: 11px; }
   .col-3, .col-4 { grid-column: span 12; }
   .month-cell { padding: 5px; }
   .month-cell .num { font-size: 11px; }

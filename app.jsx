@@ -91,7 +91,7 @@ function TopBar({ t, perspective, setPerspective, displayName, initials, tone, t
         <span>{t.search}</span>
         <kbd>⌘K</kbd>
       </div>
-      <div style={{ flex: 1 }} />
+      <div className="spacer" style={{ flex: 1 }} />
       <PerspectiveToggle t={t} value={perspective} onChange={setPerspective} />
       <button className="icon-btn" onClick={() => setLang(lang === 'es' ? 'en' : 'es')} aria-label="Language" title="Language"
         style={{ fontFamily: 'Geist Mono', fontSize: 11, fontWeight: 600 }}>
